@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="waterMapPane" onMouseMoved="#mouseMoved" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.WaterController">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <ImageView fx:id="NormalMap" fitHeight="606.0" fitWidth="1415.0" layoutX="-115.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/interface/background3.jpg" />
+    </ImageView>
+    <ImageView fx:id="sunSet" fitHeight="84.0" fitWidth="573.0">
+        <image>
+            <Image url="@../../images/mine/SeedBank.png" />
+        </image>
+    </ImageView>
+    <Label fx:id="sunNumber" layoutX="33.0" layoutY="62.0" text="0" />
+    <AnchorPane fx:id="mapPane" layoutX="-1.0">
+      <ImageView fx:id="ImageView1_1" fitHeight="87.0" fitWidth="83.0" layoutX="147.0" layoutY="83.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_2" fitHeight="87.0" fitWidth="73.0" layoutX="230.0" layoutY="81.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_3" fitHeight="87.0" fitWidth="93.0" layoutX="302.0" layoutY="77.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_4" fitHeight="87.0" fitWidth="73.0" layoutX="396.0" layoutY="73.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_5" fitHeight="87.0" fitWidth="91.0" layoutX="471.0" layoutY="72.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_6" fitHeight="93.0" fitWidth="76.0" layoutX="561.0" layoutY="74.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_7" fitHeight="84.0" fitWidth="73.0" layoutX="641.0" layoutY="86.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_8" fitHeight="98.0" fitWidth="73.0" layoutX="716.0" layoutY="69.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView1_9" fitHeight="92.0" fitWidth="79.0" layoutX="790.0" layoutY="81.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_1" fitHeight="87.0" fitWidth="83.0" layoutX="147.0" layoutY="170.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_2" fitHeight="87.0" fitWidth="73.0" layoutX="229.0" layoutY="170.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_3" fitHeight="87.0" fitWidth="93.0" layoutX="302.0" layoutY="166.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_4" fitHeight="87.0" fitWidth="73.0" layoutX="395.0" layoutY="162.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_5" fitHeight="87.0" fitWidth="91.0" layoutX="470.0" layoutY="161.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_6" fitHeight="93.0" fitWidth="76.0" layoutX="560.0" layoutY="163.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_7" fitHeight="84.0" fitWidth="73.0" layoutX="635.0" layoutY="175.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_8" fitHeight="90.0" fitWidth="73.0" layoutX="710.0" layoutY="168.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView2_9" fitHeight="92.0" fitWidth="79.0" layoutX="789.0" layoutY="170.0" pickOnBounds="true" />
+        <ImageView fx:id="ImageView4_1" fitHeight="85.0" fitWidth="83.0" layoutX="153.0" layoutY="340.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_1" fitHeight="92.0" fitWidth="83.0" layoutX="152.0" layoutY="255.0" pickOnBounds="true" />
+      <ImageView fx:id="WaterImageView3_1" fitHeight="76.0" fitWidth="83.0" layoutX="153.0" layoutY="290.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_1" fitHeight="74.0" fitWidth="83.0" layoutX="153.0" layoutY="365.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_2" fitHeight="85.0" fitWidth="73.0" layoutX="235.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_2" fitHeight="76.0" fitWidth="73.0" layoutX="235.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_3" fitHeight="85.0" fitWidth="93.0" layoutX="311.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_3" fitHeight="76.0" fitWidth="93.0" layoutX="316.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_4" fitHeight="85.0" fitWidth="73.0" layoutX="404.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_4" fitHeight="76.0" fitWidth="73.0" layoutX="398.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_5" fitHeight="85.0" fitWidth="91.0" layoutX="479.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_5" fitHeight="76.0" fitWidth="91.0" layoutX="480.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_6" fitHeight="85.0" fitWidth="76.0" layoutX="569.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_6" fitHeight="76.0" fitWidth="76.0" layoutX="564.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_7" fitHeight="85.0" fitWidth="73.0" layoutX="649.0" layoutY="288.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_7" fitHeight="76.0" fitWidth="73.0" layoutX="644.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_8" fitHeight="85.0" fitWidth="73.0" layoutX="724.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_8" fitHeight="76.0" fitWidth="73.0" layoutX="719.0" layoutY="290.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView3_9" fitHeight="85.0" fitWidth="79.0" layoutX="798.0" layoutY="255.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView3_9" fitHeight="76.0" fitWidth="79.0" layoutX="793.0" layoutY="290.0" pickOnBounds="true" />
+
+      <ImageView fx:id="ImageView4_2" fitHeight="85.0" fitWidth="73.0" layoutX="235.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_2" fitHeight="70.0" fitWidth="73.0" layoutX="235.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_3" fitHeight="85.0" fitWidth="93.0" layoutX="307.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_3" fitHeight="70.0" fitWidth="93.0" layoutX="316.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_4" fitHeight="70.0" fitWidth="73.0" layoutX="401.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_4" fitHeight="70.0" fitWidth="73.0" layoutX="398.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_5" fitHeight="70.0" fitWidth="91.0" layoutX="476.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_5" fitHeight="70.0" fitWidth="91.0" layoutX="480.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_6" fitHeight="70.0" fitWidth="76.0" layoutX="566.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_6" fitHeight="70.0" fitWidth="76.0" layoutX="564.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_7" fitHeight="70.0" fitWidth="73.0" layoutX="646.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_7" fitHeight="70.0" fitWidth="73.0" layoutX="719.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_8" fitHeight="70.0" fitWidth="73.0" layoutX="721.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_8" fitHeight="70.0" fitWidth="73.0" layoutX="644.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView4_9" fitHeight="70.0" fitWidth="65.0" layoutX="799.0" layoutY="340.0" pickOnBounds="true" />
+        <ImageView fx:id="WaterImageView4_9" fitHeight="70.0" fitWidth="65.0" layoutX="793.0" layoutY="369.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_1" fitHeight="80.0" fitWidth="83.0" layoutX="145.0" layoutY="452.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_2" fitHeight="80.0" fitWidth="83.0" layoutX="228.0" layoutY="452.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_3" fitHeight="80.0" fitWidth="81.0" layoutX="310.0" layoutY="448.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_4" fitHeight="80.0" fitWidth="82.0" layoutX="392.0" layoutY="450.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_5" fitHeight="80.0" fitWidth="80.0" layoutX="473.0" layoutY="448.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_6" fitHeight="80.0" fitWidth="82.0" layoutX="555.0" layoutY="445.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_7" fitHeight="69.0" fitWidth="73.0" layoutX="638.0" layoutY="453.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_8" fitHeight="77.0" fitWidth="90.0" layoutX="711.0" layoutY="452.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView5_9" fitHeight="82.0" fitWidth="73.0" layoutX="804.0" layoutY="444.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_1" fitHeight="80.0" fitWidth="83.0" layoutX="151.0" layoutY="519.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_2" fitHeight="68.0" fitWidth="78.0" layoutX="234.0" layoutY="529.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_3" fitHeight="70.0" fitWidth="81.0" layoutX="313.0" layoutY="529.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_4" fitHeight="70.0" fitWidth="75.0" layoutX="398.0" layoutY="529.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_5" fitHeight="71.0" fitWidth="82.0" layoutX="474.0" layoutY="526.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_6" fitHeight="70.0" fitWidth="79.0" layoutX="558.0" layoutY="529.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_7" fitHeight="73.0" fitWidth="80.0" layoutX="640.0" layoutY="526.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_8" fitHeight="67.0" fitWidth="83.0" layoutX="719.0" layoutY="529.0" pickOnBounds="true" />
+      <ImageView fx:id="ImageView6_9" fitHeight="74.0" fitWidth="81.0" layoutX="802.0" layoutY="524.0" pickOnBounds="true" />
+      <ImageView fx:id="shovelView" fitHeight="32.0" fitWidth="83.0" layoutX="504.0" layoutY="23.0" onMouseClicked="#shovelMouseMoved" pickOnBounds="true" preserveRatio="true" rotate="-54.8">
+         <image>
+            <Image url="@../../images/mine/Shovel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouseShovel" fitHeight="32.0" fitWidth="83.0" layoutX="514.0" layoutY="33.0" onMouseClicked="#shovelMouseMoved" pickOnBounds="true" preserveRatio="true" rotate="-53.1">
+         <image>
+            <Image url="@../../images/mine/Shovel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant" fitHeight="93.0" fitWidth="83.0" layoutX="342.0" layoutY="180.0" opacity="0.0" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Plants/SunFlower/0.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test" fitHeight="73.0" fitWidth="56.0" layoutX="73.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test1" fitHeight="73.0" fitWidth="56.0" layoutX="123.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test2" fitHeight="73.0" fitWidth="56.0" layoutX="173.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test3" fitHeight="73.0" fitWidth="56.0" layoutX="223.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test4" fitHeight="73.0" fitWidth="56.0" layoutX="273.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test5" fitHeight="73.0" fitWidth="56.0" layoutX="323.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test6" fitHeight="73.0" fitWidth="56.0" layoutX="373.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test7" fitHeight="73.0" fitWidth="56.0" layoutX="423.0" layoutY="5.0" onMouseClicked="#onCardSelect" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/OnePeashooter.jpg" />
+         </image>
+      </ImageView>
+    </AnchorPane>
+    <ImageView fx:id="ZombieWalk" fitHeight="114.0" fitWidth="132.0" layoutX="824.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/Zombies/Zombie/Zombie2.gif" />
+    </ImageView>
+    <ImageView fx:id="Zombie" fitHeight="150.0" fitWidth="50.0" layoutX="872.0" layoutY="273.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../images/Zombies/Zombie/0.gif" />
+        </image>
+    </ImageView>
+    <Button fx:id="anyButton" layoutX="-3.0" layoutY="-5.0" mnemonicParsing="false" onAction="#displayOptions" onMouseClicked="#displayOptions" opacity="0.0" prefHeight="611.0" prefWidth="963.0" text="Button" />
+    <ImageView fx:id="diedImageView" fitHeight="258.0" fitWidth="293.0" layoutX="310.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../images/mine/ZombiesWon.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="checkBoxView" fitHeight="258.0" fitWidth="405.0" layoutX="259.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../images/mine/Challenge_Background.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="playAgainButton" layoutX="382.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#playAgain" opacity="0.0" prefHeight="23.0" prefWidth="159.0" text="Button" />
+    <Button fx:id="backMenuButton" layoutX="377.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#backMenu" opacity="0.0" prefHeight="23.0" prefWidth="159.0" text="Button" />
+    <ImageView fx:id="wantedPlantImageView" fitHeight="93.0" fitWidth="83.0" layoutX="-84.0" layoutY="-3.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/Plants/SunFlower/SunFlower1.gif" />
+    </ImageView>
+   <ImageView fx:id="gameWinner" fitHeight="150.0" fitWidth="200.0" layoutX="529.0" layoutY="343.0" onMouseClicked="#gameWin" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/mine/Sunflower_trophy8.png" />
+      </image>
+   </ImageView>
+   <AnchorPane fx:id="selectPane" layoutY="6.0" prefHeight="200.0" prefWidth="447.0">
+      <children>
+         <ImageView fx:id="selectView" fitHeight="480.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true" y="120.0">
+            <image>
+               <Image url="@../../images/mine/selectPlants.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="plants1_1" layoutX="24.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_1" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_2" layoutX="74.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_2" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_3" layoutX="123.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_3" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_4" layoutX="173.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_4" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_5" layoutX="223.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_5" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_6" layoutX="273.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_6" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_7" layoutX="322.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_7" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants1_8" layoutX="372.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#set1_8" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="plants2_1" layoutX="24.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#set2_1" opacity="0.0" prefHeight="64.0" prefWidth="44.0" text="Button" />
+         <Button fx:id="startButton" layoutX="150.0" layoutY="555.0" mnemonicParsing="false" onMouseClicked="#onStart" opacity="0.0" prefHeight="31.0" prefWidth="141.0" text="Button" />
+      </children>
+   </AnchorPane>
+   <ImageView fx:id="backView" fitHeight="150.0" fitWidth="200.0" layoutX="603.0" onMouseClicked="#backMenu" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/mine/back.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

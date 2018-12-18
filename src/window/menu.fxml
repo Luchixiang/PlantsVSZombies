@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.MenuController">
+    <ImageView fx:id="menuImageView" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/interface/Surface.jpg" />
+    </ImageView>
+    <ImageView fx:id="startImageView" fitHeight="121.0" fitWidth="274.0" layoutX="499.0" layoutY="59.0" onMouseClicked="#startGame" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/mine/StartAdventure.png" />
+    </ImageView>
+   <ImageView fx:id="startHammerMode" fitHeight="121.0" fitWidth="274.0" layoutX="492.0" layoutY="177.0" onMouseClicked="#startHammerMode" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/mine/StartHammerMode.png" />
+      </image>
+   </ImageView>
+    <Button layoutX="796.0" layoutY="494.0" onAction="#exit" onMouseEntered="#showHand" onMouseExited="#hideHand" opacity="0.0" prefHeight="53.0" prefWidth="83.0" text="ImageView" />
+   <ImageView fx:id="challengeImageView" fitHeight="213.0" fitWidth="486.0" layoutX="207.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/mine/ChallengeSmallGame.png" />
+      </image>
+   </ImageView>
+   <AnchorPane fx:id="gamePane" prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <Button fx:id="challenge_1" layoutX="255.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#setChallenge_1" opacity="0.0" prefHeight="23.0" prefWidth="180.0" text="Button" />
+          <Button fx:id="challenge_2" layoutX="255.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#setChallenge_2" opacity="0.0" prefHeight="23.0" prefWidth="180.0" text="Button" />
+          <Button fx:id="challenge_3" layoutX="466.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#setChallenge_3" opacity="0.0" prefHeight="23.0" prefWidth="180.0" text="Button" />
+          <Button fx:id="challenge_4" layoutX="466.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#setChallenge_4" opacity="0.0" prefHeight="23.0" prefWidth="180.0" text="Button" />
+      </children></AnchorPane>
+   <AnchorPane fx:id="smallGamePane" prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="samll1_1" layoutX="362.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#setSamllChallenge_1" opacity="0.0" prefHeight="23.0" prefWidth="173.0" text="Button" />
+         <Button fx:id="small1_2" layoutX="362.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#setSamllChallenge_2" opacity="0.0" prefHeight="23.0" prefWidth="173.0" text="Button" />
+      </children>
+   </AnchorPane>
+
+</AnchorPane>

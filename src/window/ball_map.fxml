@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ballMap" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.BallMap">
+   <children>
+      <ImageView fx:id="mapImageView" fitHeight="600.0" fitWidth="1403.0" layoutX="-175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/interface/background1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ball" fitHeight="82.0" fitWidth="55.0" layoutX="101.0" onMouseClicked="#onSelected" onMouseEntered="#showHand" onMouseExited="#hideHand" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/nut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sunSet" fitHeight="73.0" fitWidth="64.0" layoutX="37.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/mine/sunset1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="sunLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="47.0" layoutY="53.0" prefHeight="23.0" prefWidth="48.0" text="0" textAlignment="CENTER" />
+       <ImageView fx:id="button" fitHeight="55.0" fitWidth="73.0" layoutX="732.0" layoutY="8.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+           <Image url="@../../images/interface/Button.png" />
+       </ImageView>
+      <Label layoutX="755.0" layoutY="10.0" prefHeight="23.0" prefWidth="27.0" text="退出" textAlignment="CENTER" onMouseClicked="#exit" />
+      <AnchorPane fx:id="mapPane" layoutX="69.0" layoutY="76.0" prefHeight="449.0" prefWidth="449.0">
+         <children>
+            <ImageView fx:id="button_1" fitHeight="105.0" fitWidth="82.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="button_2" fitHeight="105.0" fitWidth="82.0" layoutX="14.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="button_3" fitHeight="105.0" fitWidth="82.0" layoutX="7.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="button_4" fitHeight="105.0" fitWidth="82.0" layoutX="7.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="button_5" fitHeight="105.0" fitWidth="82.0" layoutX="-6.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
